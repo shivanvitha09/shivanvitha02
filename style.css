@@ -1,0 +1,167 @@
+.body{
+    background:rgba(174, 0, 255, 0.941);
+}
+.main{
+    
+    background: black;
+    border:3px solid black ;
+    height: 500px;
+    margin-top: 50px;    
+}
+.face{
+    height: 150px;
+    width: 150px;
+    border-radius: 50% 50% 0% 0%;
+    margin:auto;
+    margin-top: 30px;
+    background: chartreuse;
+}
+.main:hover .face{
+    
+    animation: moveface 1.2s 1s infinite;
+}
+@keyframes moveface{
+    0%{
+        transform:translate(50px,0);
+    }
+    25%{
+        transform:translate(0px,0);
+    }
+    50%{
+        transform:translate(-50px,0);
+    }
+    75%{
+        transform:translate(0px,0);
+    }
+    100%{
+        transform:translate(50px,0px);
+    }
+}
+.eyes{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    
+}
+.leye,.reye{
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    background: black;
+}
+
+.body1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: auto;
+    margin-top: 10px;
+}
+.larm{
+    height:75px;
+    width:25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+.main:hover .larm{
+    animation: movelarm 1s 1s infinite;
+    transform-origin: top center;
+
+}
+@keyframes movelarm{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(90deg);
+    }
+}
+.center{
+    height:170px;
+    width:150px;
+    background: chartreuse;
+    border-radius: 0 0 40% 40%;
+}
+.main:hover .center{
+    transform: rotate(360deg);
+   border-radius: 60%;
+    animation: movecenter 0.3s 0.5s infinite;
+}
+@keyframes movecenter{
+    0%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.rarm{
+    height:75px;
+    width:25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+.main:hover .rarm{
+    animation: moverarm 1s 1s infinite;
+    transform-origin: top center;
+
+}
+@keyframes moverarm{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(-90deg);
+    }
+}
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    margin: auto;
+    margin-top: -20px;
+}
+.lleg{
+   height: 75px;
+   width: 25px;
+   background: chartreuse;
+   border-radius: 50px;
+
+}
+.main:hover .lleg{
+    animation: movelleg 1s 1s infinite;
+    transform-origin: top center;
+
+}
+@keyframes movelleg{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(90deg);
+    }
+}
+.rleg{
+    height: 75px;
+   width: 25px;
+   background: chartreuse;
+   border-radius: 50px;
+
+}
+.main:hover .rleg{
+    animation: moverleg 1s 1s infinite;
+    transform-origin: top center;
+
+}
+@keyframes moverleg{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(-90deg);
+    }
+}
